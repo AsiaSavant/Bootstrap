@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Calling Plans</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    body {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+    }
+    .subscription-section {
+      padding: 50px 0;
+      color: #fff;
+    }
+    .subscription-box {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .subscription-box h2 {
+      color: #006ff0;
+    }
+    .subscription-option {
+      border: 2px solid #006ff0;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .subscription-option h3 {
+      color: #006ff0;
+    }
+    .subscription-option p {
+      margin-bottom: 20px;
+    }
+    .subscription-option .btn {
+      background-color: #006ff0;
+      border: none;
+    }
+    .subscription-option .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container subscription-section">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <div class="text-center mb-5">
+        <h2>Stay connected with loved ones around the world</h2>
+        <p>Choose a subscription plan that fits your needs.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="subscription-box">
+            <h2>Silver Plan</h2>
+            <div class="subscription-option">
+              <img src="images for boot strap/silver bar.webp" alt="Silver Plan" class="img-fluid mb-3">
+              <h3>$4.99 / month</h3>
+              <p>Make up to 100 minutes of international calls to mobiles and landlines.</p>
+              <button class="btn btn-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="subscription-box">
+            <h2>Gold Plan</h2>
+            <div class="subscription-option">
+              <img src="images for boot strap/gold bars.avif" alt="Gold Plan" class="img-fluid mb-3">
+              <h3>$9.99 / month</h3>
+              <p>Make up to 300 minutes of international calls to mobiles and landlines.</p>
+              <button class="btn btn-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="subscription-box">
+            <h2>Platinum Plan</h2>
+            <div class="subscription-option">
+              <img src="images for boot strap/Platinum bar.jpeg" alt="Platinum Plan" class="img-fluid mb-3">
+              <h3>$19.99 / month</h3>
+              <p>Make unlimited international calls to mobiles and landlines.</p>
+              <button class="btn btn-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="subscription-box">
+            <h2>Diamond Plan</h2>
+            <div class="subscription-option">
+              <img src="images for boot strap/diamond.jpeg" alt="Diamond Plan" class="img-fluid mb-3">
+              <h3>$39.99 / month</h3>
+              <p>Make unlimited international calls and enjoy additional business features.</p>
+              <button class="btn btn-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telephone Ringing Sound</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="text-center">
+    <h2>Someones Calling</h2>
+    <button id="ringButton" class="btn btn-primary">Ring</button>
+  </div>
+</div>
+
+<audio id="ringSound" src="Sounds/Ringing.mp3" preload="auto"></audio>
+
+<script>
+  document.getElementById('ringButton').addEventListener('click', function() {
+    var audio = document.getElementById('ringSound');
+    audio.play();
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="videoPlayer" class="embed-responsive-item" controls>
+          <source src="Videos/manonphone.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Get the video player element
+  var videoPlayer = document.getElementById('videoPlayer');
+
+  // Play the video when the page is loaded
+  window.onload = function() {
+    videoPlayer.play();
+  };
+</script>
+
+</body>
+</html>
+
